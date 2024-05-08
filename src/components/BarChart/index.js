@@ -10,7 +10,7 @@ const BarChartComponent = (props) => {
   useEffect(() => {
     const getBarChartData = async () => {
       try {
-        const response = await axios.get(`https://roxiler-backend-vijaykumars-projects.vercel.app/bar-chart?month=${selectedMonth}`);
+        const response = await axios.get(https://roxiler-backend-alpha.vercel.app?page=${page}&perPage=10&search=${searchInput}&month=${selectedMonth}`);
         setBarChartData(response.data);
       } catch (error) {
         console.error('Error fetching bar chart data:', error);
