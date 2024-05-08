@@ -9,7 +9,7 @@ const {selectedMonth} = props
 
   useEffect(() => {
     const getStatistics = async ()=>{
-        const statistics = await axios.get(`https://roxiler-backend-alpha.vercel.app?page=${page}&perPage=10&search=${searchInput}&month=${selectedMonth}`)
+        const statistics = await axios.get(`https://roxiler-backend-vijaykumars-projects.vercel.app/statistics/?month=${selectedMonth}`)
         
             setStatistics(statistics.data)
 
